@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav input {
+  padding: 5px;
+}
+
+/* Internship cards */
+#internship-list {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Form */
+.form-section {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.form-section input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
