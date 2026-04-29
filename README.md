@@ -1,78 +1,146 @@
-# Internship-and-Refferal-Hub-project
-# 📌 Internship & Referral Hub (Frontend Prototype)
+# Internship-Hub-project
+# 🚀 Internship Hub
 
-## 🚀 Project Overview
-
-This is a **frontend prototype** of an Internship & Referral Hub designed to help college students **find, post, and manage internship opportunities** in a simple and organized way.
-The current version is built using **HTML, CSS, and JavaScript**, focusing on core functionality without backend integration.
+A full-stack web application to manage internships with features like adding, viewing, and deleting internships using **MongoDB, Express, Node.js, and Vanilla JavaScript**.
 
 ---
 
-## 🎯 Features Implemented
+## 📌 Features
 
-* 📋 Display a list of internships (using dummy data)
+* 📄 View all internships
+* ➕ Add new internships
+* ❌ Delete internships
 * 🔍 Search internships by role
-* ➕ Add new internships using a form
-* 🎯 Apply to internships (basic alert simulation)
-* 🖥️ Clean and simple user interface
+* 🌐 Full-stack integration (Frontend + Backend + Database)
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-* **HTML** → Structure of the web page
-* **CSS** → Styling and layout design
-* **JavaScript** → Functionality, DOM manipulation, and interactivity
+**Frontend**
+
+* HTML
+* CSS
+* JavaScript (Vanilla)
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* MongoDB Atlas
+* Mongoose
 
 ---
 
 ## 📂 Project Structure
 
 ```
-project/
-│── index.html     # Main structure of the application
-│── styles.css     # Styling for UI components
-│── script.js      # Logic and functionality
+InternshipHub_Project/
+│
+├── Backend/
+│   ├── models/
+│   │   └── Internship.js
+│   ├── server.js
+│   ├── package.json
+│
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│
+└── README.md
 ```
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Setup Instructions
 
-* Internship data is stored in a **JavaScript array**
-* The **displayInternships()** function dynamically renders data on the UI
-* Users can:
+### 1️⃣ Clone the repository
 
-  * Search internships using the search bar
-  * Add new internships via the form
-* The UI updates instantly using **DOM manipulation**
-
----
-
-## 📈 Upcoming Improvements
-
-* 🔐 User authentication (Login/Signup)
-* 🌐 Backend integration using Node.js & Express
-* 🗄️ Database (MongoDB) for storing real data
-* 📊 Application tracking system
-* 🤝 Referral request feature
-
-⏳ **Planned Update:** Backend integration and full-stack functionality will be completed within **1 week**, converting this project into a complete MERN stack application.
+```
+git clone https://github.com/your-username/internship-hub.git
+cd internship-hub
+```
 
 ---
 
-## 🎓 Learning Outcome
+### 2️⃣ Install backend dependencies
 
-This project demonstrates:
+```
+cd Backend
+npm install
+```
 
-* Strong understanding of **JavaScript fundamentals**
-* Ability to manipulate the **DOM dynamically**
-* Basic implementation of **CRUD operations (frontend level)**
+---
+
+### 3️⃣ Add MongoDB connection
+
+In `server.js`, replace your connection string:
+
+```js
+mongoose.connect("your-mongodb-uri")
+```
 
 ---
 
-## 💡 Note
+### 4️⃣ Run the backend server
 
-This is the **initial frontend version** of a full MERN stack project, with backend integration scheduled in the next phase.
+```
+node server.js
+```
+
+Server will run on:
+
+```
+http://localhost:5000
+```
 
 ---
+
+### 5️⃣ Run the frontend
+
+Open `frontend/index.html` in your browser.
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint             | Description         |
+| ------ | -------------------- | ------------------- |
+| GET    | /api/internships     | Get all internships |
+| POST   | /api/internships     | Add new internship  |
+| DELETE | /api/internships/:id | Delete internship   |
+
+---
+
+## 📸 Screenshots
+
+*Add your project screenshots here*
+
+---
+
+## ✨ Future Improvements
+
+* ✏️ Edit / Update internships
+* 🔐 Authentication (Login/Register)
+* ❤️ Save / Bookmark internships
+* 🎨 UI improvements with React or Tailwind
+* 📱 Responsive design
+
+---
+
+## 🙌 Author
+
+**Amrutha Varshini Kona**
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!
+
+---
+
